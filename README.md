@@ -1,6 +1,6 @@
 # BACKEND TASK - GROOTAN TECHNOLOGIES 
 
-It is a Quiz backend application which is build with java spring-boot framework.t 
+It is a Quiz backend application which is build with java spring-boot framework. 
 the user management is handled with jwt and is embedded with swagger-ui
 the following lines will describe how to build and run the application
 
@@ -24,7 +24,8 @@ steps to run a jar file
 ## Running Swagger
 
 after running the jar 
-1. to run the swagger ``` http://localhost:port/swagger-ui.html ```in your browser
+
+1. to run the swagger hit the url``` http://localhost:port/swagger-ui.html ```in your browser
 2. create ,verify and login the user by using the authenticationController
 3. Get the jwt token as response from login api and paste it in the api key section ``` Bearer <token> ``` which is in the header part of swagger
 4. Get quiz and answer it using the QuizController
@@ -42,7 +43,7 @@ after running the jar
 
 ## Running jar in docker conatiner
   
-  1.use the ```Dockerfile``` inside the project directory to create container
+  1.use the ```Dockerfile``` inside the project directory to create docker container
   ```
   FROM openjdk:11  //download java to the docker image
   ADD /path/to/projectfoler/target/.jar /path/to/destinationfolder/jar
@@ -55,7 +56,7 @@ after running the jar
  3. check for the images using command ```sudo docker images```
  4. run the container using command ```sudo docker run -p <port to the container>:<port to run jar> conatinername```
  
- Examples of above mentioned command syntax
+ Example command of above mentioned command syntax
  
  ```
  sudo docker build -f Dockerfile -t quiz-app .
